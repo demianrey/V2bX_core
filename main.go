@@ -12,7 +12,7 @@ func main() {
 	// Obtener el puerto de la variable de entorno PORT, o usar 8080 por defecto
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "443"
 	}
 
 	// Ejecutar la función principal de tu aplicación
