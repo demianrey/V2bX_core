@@ -32,8 +32,8 @@
                 "CertMode": "self",
                 "RejectUnknownSni": false,
                 "CertDomain": "cc1.demianred.site",
-                "CertFile": "fullchain.cer",
-                "KeyFile": "cc1.demianred.site.key",
+                "CertFile": "/etc/V2bX/fullchain.cer",
+                "KeyFile": "/etc/V2bX/cc1.demianred.site.key",
                 "Email": "v2bx@github.com",
                 "Provider": "cloudflare",
                 "DNSEnv": {
