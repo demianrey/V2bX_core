@@ -13,5 +13,7 @@ RUN  apk --update --no-cache add tzdata ca-certificates \
     && cp /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 RUN mkdir /etc/V2bX/
 COPY --from=builder /app/V2bX /usr/local/bin
+# Copiar el archivo config.json desde el repositorio al contenedor
+COPY config.json /etc/V2bX/config.json
 
 ENTRYPOINT [ "V2bX", "server", "--config", "/etc/V2bX/config.json"]
