@@ -29,11 +29,11 @@
             "EnableTFO": true,
             "DNSType": "UseIPv4",
             "CertConfig": {
-                "CertMode": "none",
+                "CertMode": "self",
                 "RejectUnknownSni": false,
                 "CertDomain": "cc1.demianred.site",
-                "CertFile": "/root/.acme.sh/cc1.demianred.site_ecc/fullchain.cer",
-                "KeyFile": "/root/.acme.sh/cc1.demianred.site_ecc/cc1.demianred.site.key",
+                "CertFile": "fullchain.cer",
+                "KeyFile": "cc1.demianred.site.key",
                 "Email": "v2bx@github.com",
                 "Provider": "cloudflare",
                 "DNSEnv": {
