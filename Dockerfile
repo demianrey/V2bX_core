@@ -10,7 +10,7 @@ RUN go build -v -o V2bX -tags "sing xray hysteria2 with_reality_server with_quic
 FROM  alpine
 # 安装必要的工具包
 RUN  apk --update --no-cache add tzdata ca-certificates \
-    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    && cp /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 RUN mkdir /etc/V2bX/
 COPY --from=builder /app/V2bX /usr/local/bin
 
