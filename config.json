@@ -1,17 +1,16 @@
 {
     "Log": {
         "Level": "info",
-        "Output": ""
+        "Output": "console"
     },
     "Cores": [
         {
             "Type": "xray",
             "Log": {
-                "Level": "error",
-                "ErrorPath": "/etc/V2bX/error.log"
+                "Level": "error"
             },
-            "OutboundConfigPath": "/etc/V2bX/custom_outbound.json",
-            "RouteConfigPath": "/etc/V2bX/route.json"
+            "OutboundConfigPath": "",
+            "RouteConfigPath": ""
         }
     ],
     "Nodes": [
