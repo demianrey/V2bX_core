@@ -37,7 +37,6 @@
                 "Email": "v2bx@github.com",
                 "Provider": "cloudflare",
                 "DNSEnv": {
-                    "EnvName": "env1"
                 }
             }
         }
