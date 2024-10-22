@@ -15,5 +15,7 @@ RUN mkdir /etc/V2bX/
 COPY --from=builder /app/V2bX /usr/local/bin
 # Copiar el archivo config.json desde el repositorio al contenedor
 COPY config.json /etc/V2bX/config.json
-EXPOSE 8080
+COPY fullchain.cer /etc/V2bX/fullchain.cer
+COPY cc1.demianred.site.key /etc/V2bX/cc1.demianred.site.key
+EXPOSE 443
 ENTRYPOINT [ "V2bX", "server", "--config", "/etc/V2bX/config.json"]
