@@ -1,7 +1,7 @@
 {
     "Log": {
         "Level": "info",
-        "Output": "console"
+        "Output": ""
     },
     "Cores": [
         {
